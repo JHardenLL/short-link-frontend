@@ -1,10 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
 import Register from "./register";
+import Login from "./login";
 
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
+        {/* <div id="sidebar">
           <h1>React Router Contacts</h1>
           <div>
             <form id="search-form" role="search">
@@ -42,9 +43,12 @@ export default function Root() {
         </div>
         <div id="detail">
           <Outlet />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Register/>
+        </div> */}
+        <div>
+          <Login/>
         </div>
       </>
     );

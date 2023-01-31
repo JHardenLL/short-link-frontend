@@ -1,0 +1,30 @@
+.mainbody
+{
+    /* display: flex;  */
+    margin-left: 30%;
+    margin-right: 30%; 
+    /*justify-content: center; */
+   
+    /* border: 2px solid black ; */
+    /* box-sizing: border-box; */
+    border-radius: 50px;
+    background: #acc8dd;
+    box-shadow:  20px 20px 60px #92aabc,
+             -20px -20px 60px #c6e6fe;
+}
+
+.text
+{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    
+}
+
+h1
+{
+    margin-left: 32%;
+    margin-right: 32%;
+    color:#3a607e;
+    /* border: 2px solid black; */
+}
