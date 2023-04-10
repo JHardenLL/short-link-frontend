@@ -31,18 +31,19 @@ class Register extends React.Component{
         // const email=document.getElementsByName('email');
         // const pwd=document.getElementsByName('pwd');
         return(
-            <form method="post">
-                name<input type="text" name="name" onChange={this.getName}></input><br />
-                email<input type="text" name="email" onChange={this.getEmail}></input><br />
-                password<input type="text" name="password" onChange={this.getPwd}></input><br />
-                <input type="button" value="注册" onClick={()=>{
+            <div>
+                <input type="text" name="name" id="rgname" className="input-text" placeholder="username" onChange={this.getName}></input><br />
+                <input type="text" name="email" id="rgemail" className="input-text" placeholder="email" onChange={this.getEmail}></input><br />
+                <input type="text" name="password" id="rgpwd" className="input-text" placeholder="password" onChange={this.getPwd}></input><br />
+                <input type="button" className="input-button" value="REGISTER" onClick={()=>{
+                    document.getElementById("rgname").value="";
+                    document.getElementById("rgemail").value="";
+                    document.getElementById("rgpwd").value="";
                     console.log(this.state.getedname);
                     console.log(this.state.getedemail);
                     console.log(this.state.getedpwd);
                     fetch("http://localhost:3000/user/register",{
                         method:"POST",
-                        //mode:'no-cors',
-                        //headers:"Access-Control-Allow-Methods",
                         headers:{'Content-Type':'application/json'},
                         body:JSON.stringify({
                             "name": this.state.getedname,
@@ -54,7 +55,7 @@ class Register extends React.Component{
                     .then(data=>console.log(data));
                 }}>
                 </input>
-            </form>
+            </div>
         );
     }
 }
