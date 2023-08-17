@@ -1,0 +1,17 @@
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.arrowbase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.box{
+     
+}
+

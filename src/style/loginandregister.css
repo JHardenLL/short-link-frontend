@@ -12,6 +12,7 @@
 }
 
 .box{
+    position: relative;
     background-color: #FFF;
     border-radius: 15px;
     margin-top: 10%;
@@ -66,3 +67,30 @@
     border-color:#a6c1ee;
     width: 80px;
 }
+
+.catcha {
+    position: absolute;
+    height: 50px;
+    width: 90px;
+    top: 72%;
+    left: 3vw;
+  }
+
+  /* .box{
+    position: relative;
+    background-color: #FFF;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+} */
+
+/* .hint {
+    position: absolute;
+    visibility: hidden;
+    height: 50px;
+    width: 200px;
+    top: 72%;
+    left: 3vw;
+  } */
